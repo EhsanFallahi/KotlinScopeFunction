@@ -3,6 +3,8 @@ fun main(){
 
     letScopeFunction()
     alsoScopeFunction()
+//    applyScopeFunction()
+    runAndWithScopeFunction()
 }
 
 fun alsoScopeFunction() {
@@ -28,4 +30,20 @@ fun letScopeFunction() {
 //        "S S"
     }?: "0"
     println("with let scopeFunction: $x")
+}
+
+fun applyScopeFunction() {
+    TODO("Not yet implemented")
+}
+
+
+fun runAndWithScopeFunction() {
+    var x="esteghlal".run {
+        this.toUpperCase()
+    }
+    var y= with("taj kabir"){
+        this.toUpperCase()
+    }
+    println("run scope function:$x")
+    println("with scope function:$y")
 }
